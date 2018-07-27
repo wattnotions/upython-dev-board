@@ -192,47 +192,47 @@ FS_DP
 Text Label 9650 4750 0    65   ~ 0
 FS_VUSB
 Text Label 9650 5250 0    65   ~ 0
-IO_PA4
+A4
 Text Label 9650 5150 0    65   ~ 0
-IO_PA5
+A5
 Text Label 9650 5050 0    65   ~ 0
-IO_PA6
+A6
 Text Label 9650 4950 0    65   ~ 0
 IO_PA7
 Text Label 9650 4250 0    65   ~ 0
-IO_PA14
+A14
 Text Label 9650 4150 0    65   ~ 0
-IO_PA15
+A15
 Text Label 9650 7450 0    65   ~ 0
-IO_PB1
+B1
 Text Label 9650 7350 0    65   ~ 0
-IO_PB2
+B2
 Text Label 5900 9800 0    65   ~ 0
 IO_PB2
 Text Label 9650 7250 0    65   ~ 0
-IO_PB3
+B3
 Text Label 9650 7150 0    65   ~ 0
-IO_PB4
+B4
 Text Label 9650 6650 0    65   ~ 0
-IO_PB9
+B9
 Text Label 5900 10000 0    65   ~ 0
 IO_PB11
 Text Label 9650 6350 0    65   ~ 0
-IO_PB12
+B12
 Text Label 9650 6250 0    65   ~ 0
-IO_PB13
+B13
 Text Label 9650 6150 0    65   ~ 0
-IO_PB14
+B14
 Text Label 9650 6050 0    65   ~ 0
-IO_PB15
+B15
 Text Label 6650 7550 2    65   ~ 0
-GSM_PWRKEY
+C0
 Text Label 9650 4850 0    65   ~ 0
-LEDR1
+A8
 Text Label 9650 7050 0    65   ~ 0
-MMA_AVDD
+B5
 Text Label 5900 10400 0    65   ~ 0
-MMA_AVDD
+B5
 Text Label 6250 5150 0    65   ~ 0
 NRST
 Text Label 6250 6350 0    65   ~ 0
@@ -440,9 +440,9 @@ SDIO_SW
 Text Label 9550 4350 0    10   ~ 0
 USR_SW
 Text Label 9650 5550 0    60   ~ 0
-INST1_TTL_TX
+A1
 Text Label 9650 5650 0    60   ~ 0
-INST1_TTL_RX
+A0
 Text Notes 9025 5675 0    43   ~ 0
 TX(4)
 $Comp
@@ -463,39 +463,39 @@ TX(2)
 Text Notes 9025 5375 0    43   ~ 0
 RX(2)
 Text Label 9650 5350 0    60   ~ 0
-INST2_TTL_TX
+A3
 Text Label 9650 5450 0    60   ~ 0
-INST2_TTL_RX
+A2
 Text Notes 7225 6975 0    43   ~ 0
 TX(6)
 Text Notes 7225 6875 0    43   ~ 0
 RX(6)
 Text Label 6650 6850 2    60   ~ 0
-INST3_TTL_TX
+C7
 Text Label 6650 6950 2    60   ~ 0
-INST3_TTL_RX
+C6
 Text Notes 9175 6975 2    43   ~ 0
 I2C(1) - SCL
 Text Notes 9175 6875 2    43   ~ 0
 I2C(1) - SDA
 Text Label 9650 6950 0    65   ~ 0
-INA219_SCL
+B6
 Text Label 9650 6850 0    65   ~ 0
-INA219_SDA
+B7
 Text Label 6650 7050 2    65   ~ 0
-INST1_HSD_SW
+C5
 Text Label 6650 7150 2    65   ~ 0
-INST2_HSD_SW
+C4
 Text Label 6650 7250 2    65   ~ 0
-INST3_HSD_SW
+C3
 Text Label 6650 7350 2    65   ~ 0
-GSM_HSD_SW
+C2
 Text Label 6650 7450 2    65   ~ 0
-GPS_HSD_SW
+C1
 Text Label 9650 6450 0    65   ~ 0
-GSM_TX
+B11
 Text Label 9650 6550 0    65   ~ 0
-GSM_RX
+B10
 Text Notes 9125 6575 2    43   ~ 0
 TX(3)
 Text Notes 9125 6475 2    43   ~ 0
@@ -505,7 +505,7 @@ GND
 Text GLabel 4850 6750 1    10   UnSpc ~ 0
 GND
 Text Label 9650 7550 0    60   ~ 0
-INA219_HSD_SW
+B0
 $Comp
 L +BATT #PWR08
 U 1 1 5B40BCB8
@@ -573,7 +573,7 @@ F 3 "" H 10800 1600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text Label 9650 6750 0    60   ~ 0
-SD_CARD_HSD_SW
+B8
 $Comp
 L USB_OTG J3
 U 1 1 5B40BCBE
@@ -1056,10 +1056,6 @@ Wire Wire Line
 Wire Wire Line
 	6650 6950 6850 6950
 Wire Wire Line
-	9550 6950 11400 6950
-Wire Wire Line
-	9550 6850 11250 6850
-Wire Wire Line
 	6650 7050 6850 7050
 Wire Wire Line
 	6650 7150 6850 7150
@@ -1071,8 +1067,6 @@ Wire Wire Line
 	6650 7450 6850 7450
 Wire Wire Line
 	9550 6550 10150 6550
-Wire Wire Line
-	9550 6450 10650 6450
 Wire Wire Line
 	6650 7550 6850 7550
 Wire Wire Line
@@ -1182,8 +1176,6 @@ Wire Wire Line
 	12100 1550 12100 1700
 Wire Wire Line
 	12100 1250 12100 1150
-Text Label 10150 6450 0    60   ~ 0
-IO_PB11
 Text Label 9200 9650 2    65   ~ 0
 SDIO_CMD
 Text Label 9200 10050 2    65   ~ 0
@@ -1259,56 +1251,6 @@ Wire Wire Line
 	5250 6350 5450 6350
 Wire Wire Line
 	5450 6350 5450 6050
-Text Label 10400 6850 0    60   ~ 0
-GPS_I2C_SDA
-Text Label 10400 6950 0    60   ~ 0
-GPS_I2C_SCK
-Wire Wire Line
-	11250 6850 11250 6650
-Wire Wire Line
-	11400 6950 11400 6650
-$Comp
-L R R9
-U 1 1 5B40BCE0
-P 11250 6500
-F 0 "R9" V 11330 6500 50  0000 C CNN
-F 1 "4.7k" V 11250 6500 50  0000 C CNN
-F 2 "Resistors_SMD:R_0603" V 11180 6500 50  0001 C CNN
-F 3 "" H 11250 6500 50  0001 C CNN
-	1    11250 6500
-	1    0    0    -1  
-$EndComp
-$Comp
-L R R10
-U 1 1 5B40BCE1
-P 11400 6500
-F 0 "R10" V 11480 6500 50  0000 C CNN
-F 1 "4.7k" V 11400 6500 50  0000 C CNN
-F 2 "Resistors_SMD:R_0603" V 11330 6500 50  0001 C CNN
-F 3 "" H 11400 6500 50  0001 C CNN
-	1    11400 6500
-	1    0    0    -1  
-$EndComp
-$Comp
-L +3V3 #+3V021
-U 1 1 5B40BCE2
-P 11250 6200
-F 0 "#+3V021" V 11150 6000 70  0001 L BNN
-F 1 "+3V3" V 11150 6000 70  0000 L BNN
-F 2 "" H 11250 6200 60  0001 C CNN
-F 3 "" H 11250 6200 60  0001 C CNN
-	1    11250 6200
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	11400 6350 11400 6250
-Wire Wire Line
-	11400 6250 11250 6250
-Wire Wire Line
-	11250 6200 11250 6350
-Connection ~ 11250 6250
-Text Label 10650 6450 0    60   ~ 0
-GPS_TX
 $Comp
 L +3V3 #+3V022
 U 1 1 5B40BCE3
@@ -1414,23 +1356,97 @@ $EndComp
 $Comp
 L Conn_01x17 J2
 U 1 1 5B5BA56D
-P 3750 8650
-F 0 "J2" H 3750 9550 50  0000 C CNN
-F 1 "Conn_01x17" H 3750 7750 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x17_Pitch2.54mm" H 3750 8650 50  0001 C CNN
-F 3 "" H 3750 8650 50  0001 C CNN
-	1    3750 8650
+P 4050 8650
+F 0 "J2" H 4050 9550 50  0000 C CNN
+F 1 "Conn_01x17" H 4050 7750 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x17_Pitch2.54mm" H 4050 8650 50  0001 C CNN
+F 3 "" H 4050 8650 50  0001 C CNN
+	1    4050 8650
 	1    0    0    -1  
 $EndComp
 $Comp
 L Conn_01x17 J1
 U 1 1 5B5BABA7
-P 2200 8650
-F 0 "J1" H 2200 9550 50  0000 C CNN
-F 1 "Conn_01x17" H 2200 7750 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x17_Pitch2.54mm" H 2200 8650 50  0001 C CNN
-F 3 "" H 2200 8650 50  0001 C CNN
-	1    2200 8650
-	-1   0    0    1   
+P 2350 8650
+F 0 "J1" H 2350 9550 50  0000 C CNN
+F 1 "Conn_01x17" H 2350 7750 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x17_Pitch2.54mm" H 2350 8650 50  0001 C CNN
+F 3 "" H 2350 8650 50  0001 C CNN
+	1    2350 8650
+	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	9550 6850 9650 6850
+Wire Wire Line
+	9550 6950 9650 6950
+Wire Wire Line
+	9550 6450 9650 6450
+Text Label 2000 7850 2    60   ~ 0
+C0
+Text Label 2000 7950 2    60   ~ 0
+C1
+Text Label 2000 8050 2    60   ~ 0
+C2
+Text Label 2000 8150 2    60   ~ 0
+C3
+Text Label 2000 8250 2    60   ~ 0
+C4
+Text Label 2000 8350 2    60   ~ 0
+C5
+Text Label 2000 8450 2    60   ~ 0
+C6
+Text Label 2000 8550 2    60   ~ 0
+C7
+Text Label 2000 8650 2    60   ~ 0
+B0
+Text Label 2000 8750 2    60   ~ 0
+B1
+Text Label 2000 8850 2    60   ~ 0
+B2
+Text Label 2000 8950 2    60   ~ 0
+B3
+Text Label 2000 9050 2    60   ~ 0
+B4
+Text Label 2000 9150 2    60   ~ 0
+B5
+Text Label 2000 9250 2    60   ~ 0
+B6
+Text Label 2000 9350 2    60   ~ 0
+B7
+Text Label 2000 9450 2    60   ~ 0
+B8
+Text Label 3700 7850 2    60   ~ 0
+A15
+Text Label 3700 7950 2    60   ~ 0
+A14
+Text Label 3700 8050 2    60   ~ 0
+A8
+Text Label 3700 8150 2    60   ~ 0
+A6
+Text Label 3700 8250 2    60   ~ 0
+A5
+Text Label 3700 8350 2    60   ~ 0
+A4
+Text Label 3700 8450 2    60   ~ 0
+A3
+Text Label 3700 8550 2    60   ~ 0
+A2
+Text Label 3700 8650 2    60   ~ 0
+A1
+Text Label 3700 8750 2    60   ~ 0
+A0
+Text Label 3700 8850 2    60   ~ 0
+B15
+Text Label 3700 8950 2    60   ~ 0
+B14
+Text Label 3700 9050 2    60   ~ 0
+B13
+Text Label 3700 9150 2    60   ~ 0
+B12
+Text Label 3700 9250 2    60   ~ 0
+B11
+Text Label 3700 9350 2    60   ~ 0
+B10
+Text Label 3700 9450 2    60   ~ 0
+B9
 $EndSCHEMATC
